@@ -1,15 +1,10 @@
 package com.example.user.wordcounter;
 
-import java.lang.reflect.Array;
+
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.HashMap;
-import java.util.HashSet;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+
 
 /**
  * Created by user on 06/11/2017.
@@ -47,11 +42,10 @@ public class WordCountCalculator {
     }
 
     public HashMap wordFrequencies() {
-        int count = 0;
         wordsHash = new HashMap();
 
         for (String word : wordCount) {
-            count = Collections.frequency(wordCount, word);
+            int count = Collections.frequency(wordCount, word);
             wordsHash.put(word, count);
         }
 
